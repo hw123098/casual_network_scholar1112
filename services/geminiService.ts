@@ -90,7 +90,7 @@ ${p}
 `;
   
   const extractionResult = await ai.models.generateContent({
-      model: 'gemini-2.5-pro',
+      model: 'gemini-1.5-flash',
       contents: extractionPrompt,
       config: {
         responseMimeType: "application/json",
@@ -169,7 +169,7 @@ The JSON structure for each object must be:
 `;
 
     const suggestionResult = await ai.models.generateContent({
-      model: 'gemini-2.5-pro', // Using a more powerful model for creative suggestions
+      model: 'gemini-1.5-flash', // Using a more powerful model for creative suggestions
       contents: suggestionPrompt,
       config: {
         responseMimeType: "application/json",
